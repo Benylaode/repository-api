@@ -11,6 +11,7 @@ CREATE TABLE data_dosen (
     nip VARCHAR(10) PRIMARY KEY,
     nama_lengkap VARCHAR(100),
     prodi_id INT,
+    password VARBINARY(255), -
     FOREIGN KEY (prodi_id) REFERENCES data_prodi(id) ON DELETE SET NULL
 );
 
